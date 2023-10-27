@@ -1,0 +1,137 @@
+.background-img img {
+    width: auto;
+    height: 100%;    
+}
+
+.background-img {
+    background-attachment: fixed;
+    background-image: url('./Images/backgroundimg.png');    
+    background-size: cover;
+    padding: 0;
+    min-height: 900px;
+    padding-top: 10%;    
+}
+
+article {
+    display: inline-block;
+    width: calc(50% - 32px);
+    box-sizing: border-box;     
+    margin: 10px;
+    padding: 24px;
+    text-align: center;    
+    border: 1px solid black;
+}
+
+.infotext {
+    padding-top: 100px;
+    width: 90%;        
+    padding: 16px;
+    margin: auto;    
+    background-color: #ffffff5d;    
+}
+
+.readmore {
+    text-decoration: underline;
+    font-size: 1rem;    
+    padding: 0;
+    margin: 10px;
+    position: relative;
+    font-size: 20px;    
+}
+
+.moretext {
+    background-color:#8e7c93dc;
+    font-size: 1rem;
+    padding: 16px;
+    margin-left: -16px;
+    position: absolute;
+    left: -1000%;
+    width: calc(50% - 32px);
+    transition: left linear .2s;
+}
+
+.readmore:hover .moretext {
+    left: 0;    
+}
+
+h3 {
+    font-size: 1.5rem;    
+}
+
+.ipsum {
+    width: 90%;       
+    margin: auto; 
+    padding: 24px;
+    
+}
+
+.input {
+    border-bottom: 1px solid black;
+    padding-bottom: 16px;
+}
+
+.skateipsum {
+    display: inline-block;
+    width: calc(50% - 32px);        
+    margin: 10px;
+    padding: 24px;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.undertext {
+    margin: 24px;
+    padding: 24px;   
+}
+
+
+@media screen and (max-width: 768px) {
+    article {
+        box-sizing: unset;
+        width: 90%;
+        padding: 5px;
+        padding-top: 5px;
+        text-align: center; 
+        margin-top: 0;           
+    }
+
+    .moretext {
+        box-sizing: unset;
+        width: 90%;
+        background-color: #8E7C93;
+    }
+
+    .skateipsum {
+        box-sizing: unset;
+        width: 100%;
+        padding: 5px;
+        padding-top: 5px;
+        text-align: center; 
+        
+    }
+
+    .undertext {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .input {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .ipsum {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .background-img {
+        position:static;
+    }
+}
+

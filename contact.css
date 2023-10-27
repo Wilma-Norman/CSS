@@ -1,0 +1,72 @@
+@keyframes body {
+    from {background-color: #798071;}
+    to {background-color: #fff;}     
+}
+
+body {
+    animation: body;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin: 0;
+}
+
+.contact-img-size {
+    width: 25%;
+    height: auto;  
+    margin: 16px;      
+}
+
+.contact-img-size img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;    
+}
+
+h3 {    
+    text-align: center;
+}
+
+.field {
+    margin: 20px 40px;             
+}
+
+.field input {    
+    border: none;
+    border-bottom: 1px solid black;   
+    font-size: 20px; 
+}
+
+button {
+    padding: 7px 10px; 
+    margin: 10px;
+    background-color: #8E7C93;
+    border-color: #d7d6d6;
+    color: #fff;    
+    font-size: 15px;    
+    margin-left: 40%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;   
+}
+
+
+@media screen and (max-width: 768px) {   
+
+    .contact-img-size {        
+        display: none;
+    }
+
+    .forms-requierd {
+        margin: auto;
+    }    
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
